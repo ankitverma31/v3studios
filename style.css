@@ -119,6 +119,17 @@ body{
 .button input[type="submit"]:hover{
   background: #fcca00;
 }
+.floating-icon{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: none;
+}
+.floating-icon svg{
+  display: block;
+  max-width: 54px;
+  height: auto;
+}
 
 @media (max-width: 950px) {
   .container{
@@ -154,3 +165,6 @@ body{
  }
 }
 
+@media (max-width: 599px) {
+   .floating-icon{display: block;}
+}
