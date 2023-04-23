@@ -172,7 +172,7 @@ h1 img{width: 100%;height: auto;max-width: 150px;margin: 20px 0;}
    .floating-icon{display: block;}
    .container{padding: 30px 20px;}
    .container .content .left-side{justify-content: center;}
-   .content .left-side .details{flex-basis: 100%;border-bottom: 1px solid #eee;border-bottom-style: dotted;}
+   .content .left-side .details{flex-basis: 100%;border-bottom: 1px solid rgb(223, 223, 223);border-bottom-style: dotted;}
    .content .left-side .details:last-child{border-bottom: none;}
    .right-side .button{display: block;margin-top: 16px;}
    .right-side .button input[type="submit"]{width: 100%;}
