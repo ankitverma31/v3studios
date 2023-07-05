@@ -23,6 +23,21 @@
     <link rel="stylesheet" href="style.css">
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '609699377991431');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=609699377991431&ev=PageView&noscript=1" /></noscript>
+<!-- End Meta Pixel Code -->
    </head>
 <body>
   <header>
@@ -59,7 +74,7 @@
       <div class="right-side">
         <div class="topic-text">Get In Touch</div>
         <p>We would love to hear from you! If you have any questions about our photography services or would like to schedule a photo session, please don't hesitate to get in touch.</p>
-      <form name="contact" method="POST" data-netlify="true">
+      <form name="contact" method="POST" data-netlify="true" action="/thankyou">
         <div class="input-box">
           <input type="text" name="name" placeholder="Name*" required>
         </div>
