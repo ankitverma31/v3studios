@@ -12,7 +12,8 @@ a{
 body{
   min-height: 100vh;
   width: 100%;
-  background: #fff2bf;
+  background: #202124;
+  color: #d1d1d1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,10 +27,11 @@ body{
 h1 img{width: 100%;height: auto;max-width: 150px;margin: 20px 0;}
 .container{
   width: 85%;
-  background: #fbfbfb;
-  border-radius: 6px;
+  background: #171717;
+  border-radius: 20px;
   padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #212325;
 }
 .container .content{
   display: flex;
@@ -62,7 +64,7 @@ h1 img{width: 100%;height: auto;max-width: 150px;margin: 20px 0;}
 }
 .content .left-side .details i{
   font-size: 30px;
-  color: #fcd741;
+  color: #d09920;
   margin-bottom: 10px;
 }
 .content .left-side .details .topic{
@@ -83,7 +85,7 @@ h1 img{width: 100%;height: auto;max-width: 150px;margin: 20px 0;}
 .content .right-side .topic-text{
   font-size: 23px;
   font-weight: 600;
-  color: #fcd741;
+  color: #d09920;
 }
 .right-side .input-box{
   height: 50px;
@@ -97,7 +99,8 @@ h1 img{width: 100%;height: auto;max-width: 150px;margin: 20px 0;}
   border: none;
   outline: none;
   font-size: 16px;
-  background: #F0F1F8;
+  background: #303134;
+  color: #d1d1d1;
   border-radius: 6px;
   padding: 0 15px;
   resize: none;
@@ -119,12 +122,12 @@ h1 img{width: 100%;height: auto;max-width: 150px;margin: 20px 0;}
   border: none;
   padding: 8px 16px;
   border-radius: 6px;
-  background: #fcd741;
+  background: #d09920;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .button input[type="submit"]:hover{
-  background: #fcca00;
+  background: #9c7407;
 }
 .floating-icon{
   position: fixed;
@@ -186,5 +189,5 @@ h1 img{width: 100%;height: auto;max-width: 150px;margin: 20px 0;}
 
 /* Thank You Page */
 .thankyou-page .check-icon{width: 150px;height: 150px;margin: 0 auto;display: block;margin-bottom: 20px;}
-.thankyou-page .back-btn{text-decoration: none; color: #FFF; background: #fcd741; padding: 8px 12px; border-radius: 10px; margin: 0 auto; display: block; max-width: 200px; text-align: center;margin-top: 30px;}
-.thankyou-page .back-btn:hover{background: #fcca00;}
+.thankyou-page .back-btn{text-decoration: none; color: #FFF; background: #d09920; padding: 8px 12px; border-radius: 10px; margin: 0 auto; display: block; max-width: 200px; text-align: center;margin-top: 30px;}
+.thankyou-page .back-btn:hover{background: #9c7407;}
