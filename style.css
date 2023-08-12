@@ -17,11 +17,40 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px 0;
+  margin: 40px 0;
 }
 
 /* Common Class */
 .text-center{text-align: center;}
+
+.notification-top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  background: #a38200;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  font-weight: 700;
+}
+.notification-top-bar p {
+  padding: 0;
+  margin: 0;
+}
+.notification-top-bar p a {
+  padding: 5px 10px;
+  border-radius: 3px;
+  background: #FFF;
+  color: #e6bf24;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 12px;
+}
 
 
 header li {
@@ -36,7 +65,7 @@ header li {
   }
 } */
 .offcanvas-menu > label {
-  top: 18px;
+  top: 70px;
   right: 14px;
   position: fixed;
   width: 40px;
@@ -88,13 +117,13 @@ header li {
   display: flex;
   align-items: center;
   font-family: "Monoton", cursive;
-  background: linear-gradient(-90deg, #49a4ed 30%, #3d00a9 110%);
+  /* background: linear-gradient(-90deg, #49a4ed 30%, #3d00a9 110%); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .offcanvas-menu nav > div a i {
   font-size: 4rem;
-  background: linear-gradient(120deg, #49a4ed 30%, #3d00a9 110%);
+  /* background: linear-gradient(120deg, #49a4ed 30%, #3d00a9 110%); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -355,6 +384,7 @@ h1 img{width: 100%;
     width: 100%;
     margin-bottom: 40px;
     position: fixed;
+    top: 52px;
     border-bottom: 1px solid #393939;
     z-index: 1;
   }
@@ -363,10 +393,13 @@ h1 img{width: 100%;
     position: fixed;
     max-width: 80px;
     height: auto;
-    top: 14px;
+    top: 66px;
     margin: 0;
   }
-  .container{margin-top: 116px;}
+  .notification-top-bar{height: 52px;line-height: 1.4;}
+  .notification-top-bar p{padding: 3px 0;width: 90%;margin: 0 auto;}
+  .notification-top-bar p a {padding: 2px 5px;}
+  .container{margin-top: 168px;}
 
   .offcanvas-menu{display: block;}
   .footer{display: none;}

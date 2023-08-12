@@ -24,7 +24,7 @@
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
@@ -48,7 +48,24 @@
     gtag('config', 'AW-11247094150');
   </script>
   <!-- End Google tag (gtag.js) -->
-
+  <style>
+    body {
+      background-image: url("./assets/images/bg.png");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .container{
+      background: rgba(23, 23, 23, 0.7);
+    }
+    @media (max-width: 599px) {
+      body{background-image: url("./assets/images/bgmob.png");}
+      header{top: 0;}
+      header img{top: 14px;}
+      .offcanvas-menu > label{top: 18px;}
+    }
+  </style>
 </head>
 
 <body>
@@ -65,16 +82,16 @@
         </div>
         <ul>
           <li><a href="/">Home</a></li>
-<li><a href="/about-us">About Us</a></li>
+          <li><a href="/about-us">About Us</a></li>
           <li><a href="/gallery">Gallery</a></li>
           <li><a href="/rental-packages">Rental Packages </a></li>
         </ul>
       </nav>
     </div>
     <h1>
-      <img src="./assets/images/logo-light.png" alt="V3 Studios"
-        title="V3 Studios | The perfect space for your photography needs"
-        aria-label="V3 Studios | The perfect space for your photography needs" width="150" height="86">
+      <a href="/"><img src="./assets/images/logo-light.png" alt="V3 Studios"
+          title="V3 Studios | The perfect space for your photography needs"
+          aria-label="V3 Studios | The perfect space for your photography needs" width="150" height="86"></a>
     </h1>
   </header>
   <div class="title-wrap wpd-page">
@@ -117,8 +134,9 @@
       </div>
       <div class="right-side">
         <div class="topic-text" style="margin-bottom: 20px;">Calling all photography enthusiasts! 📷✨</div>
-        <p>This World Photographers Day, we're celebrating your creative spirit with an incredible contest that will set your creativity soaring! 🚀🎉</p>
-        <form name="wpd" method="POST" data-netlify="true" action="/world-photography-day/thankyou">
+        <p>This World Photographers Day, we're celebrating your creative spirit with an incredible contest that will set
+          your creativity soaring! 🚀🎉</p>
+        <form name="wpd" method="POST" enctype="multipart/form-data" data-netlify="true" action="/world-photography-day/thankyou">
           <div class="input-box">
             <input type="text" name="name" placeholder="Name*" required>
           </div>
@@ -133,7 +151,8 @@
           </div>
           <div class="file-upload-wrap" style="margin-bottom: 16px;">
             <p>Showcase Your Best Indoor Photography Work!(Upto 2 images)</p>
-            <input type="file" id="img" name="img1[]" accept="image/*" multiple onchange="checkFileCount(this)">
+            <input type="file" id="img" name="img1" accept="image/*" onchange="checkFileCount(this)" required>
+            <input type="file" id="img" name="img2" accept="image/*" onchange="checkFileCount(this)">
           </div>
           <div class="button">
             <input type="submit" value="Send Now">
@@ -167,17 +186,17 @@
       </svg></a>
   </div>
   <footer class="footer">
-    <a href="/about">About Us</a>
+    <a href="/about-us">About Us</a>
     <a href="/gallery">Gallery</a>
     <a href="/rental-packages">Rental Packages</a>
   </footer>
   <script>
     function checkFileCount(input) {
-    if (input.files.length > 2) {
-        alert('You can select up to 2 images only!');
+      if (input.files.length > 1) {
+        alert('You can select up to 1 images only!');
         input.value = ''; // Clear the file input
+      }
     }
-}
   </script>
 </body>
 
