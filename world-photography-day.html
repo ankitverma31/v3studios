@@ -56,14 +56,27 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
-    .container{
+
+    .container {
       background: rgba(23, 23, 23, 0.7);
     }
+
     @media (max-width: 599px) {
-      body{background-image: url("./assets/images/bgmob.png");}
-      header{top: 0;}
-      header img{top: 14px;}
-      .offcanvas-menu > label{top: 18px;}
+      body {
+        background-image: url("./assets/images/bgmob.png");
+      }
+
+      header {
+        top: 0;
+      }
+
+      header img {
+        top: 14px;
+      }
+
+      .offcanvas-menu>label {
+        top: 18px;
+      }
     }
   </style>
 </head>
@@ -136,7 +149,8 @@
         <div class="topic-text" style="margin-bottom: 20px;">Calling all photography enthusiasts! 📷✨</div>
         <p>This World Photographers Day, we're celebrating your creative spirit with an incredible contest that will set
           your creativity soaring! 🚀🎉</p>
-        <form name="wpd" method="POST" enctype="multipart/form-data" data-netlify="true" action="/world-photography-day/thankyou">
+        <form name="wpd" method="POST" enctype="multipart/form-data" data-netlify="true"
+          action="/world-photography-day/thankyou">
           <div class="input-box">
             <input type="text" name="name" placeholder="Name*" required>
           </div>
@@ -151,6 +165,7 @@
           </div>
           <div class="file-upload-wrap" style="margin-bottom: 16px;">
             <p>Showcase Your Best Indoor Photography Work!(Upto 2 images)</p>
+            <p style="font-size: 12px;margin-bottom: 12px;"><span style="color: #fff;padding: 0 6px;background: #4CAF50;border-radius: 2px;">TIP</span> : Need to resize your image to 250kb? Use this <a href="https://bulkresizephotos.com/en?preset=true&quality=1&type=filesize&value=250000">link</a></p>
             <input type="file" id="img" name="img1" accept="image/*" onchange="checkFileCount(this)" required>
             <input type="file" id="img" name="img2" accept="image/*" onchange="checkFileCount(this)">
           </div>
@@ -192,9 +207,21 @@
   </footer>
   <script>
     function checkFileCount(input) {
+      // Check number of files
       if (input.files.length > 1) {
         alert('You can select up to 1 images only!');
         input.value = ''; // Clear the file input
+        return;
+      }
+
+      // Check file size
+      if (input.files[0]) {
+        var fileSize = input.files[0].size / 1024; // in KB
+
+        if (fileSize > 250) {
+          alert('The uploaded file size should not exceed 250KB!');
+          input.value = ''; // Clear the file input
+        }
       }
     }
   </script>
