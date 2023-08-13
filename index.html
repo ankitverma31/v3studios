@@ -35,7 +35,7 @@
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
@@ -68,11 +68,16 @@
       background-size: cover;
       background-attachment: fixed;
     }
-    .container{
+
+    .container {
       background: rgba(23, 23, 23, 0.7);
     }
+
     @media (max-width: 599px) {
-      body{background-image: url("./assets/images/bgmob.png");}
+      body {
+        background-image: url("./assets/images/bgmob.png");
+      }
+
       /* header{top: 0;}
       header img{top: 14px;}
       .offcanvas-menu > label{top: 18px;} */
@@ -82,7 +87,8 @@
 
 <body>
   <div class="notification-top-bar">
-    <p>✨ Participate in our contest to <span>WIN</span> 8hrs of free studio time!<small><a href="/world-photography-day">Enter&nbsp;Now!</a></small></p>
+    <p>✨ Participate in our contest to <span>WIN</span> 8hrs of free studio time!<small><a
+          href="/world-photography-day">Enter&nbsp;Now!</a></small></p>
   </div>
   <header>
     <div class="offcanvas-menu">
@@ -97,7 +103,7 @@
         </div>
         <ul>
           <li><a href="/">Home</a></li>
-<li><a href="/about-us">About Us</a></li>
+          <li><a href="/about-us">About Us</a></li>
           <li><a href="/gallery">Gallery</a></li>
           <li><a href="/rental-packages">Rental Packages </a></li>
         </ul>
@@ -105,8 +111,8 @@
     </div>
     <h1>
       <a href="/"><img src="./assets/images/logo-light.png" alt="V3 Studios"
-        title="V3 Studios | The perfect space for your photography needs"
-        aria-label="V3 Studios | The perfect space for your photography needs" width="150" height="86"></a>
+          title="V3 Studios | The perfect space for your photography needs"
+          aria-label="V3 Studios | The perfect space for your photography needs" width="150" height="86"></a>
     </h1>
   </header>
   <div class="container">
@@ -199,6 +205,10 @@
     <a href="/gallery">Gallery</a>
     <a href="/rental-packages">Rental Packages</a>
   </footer>
+  <script>
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  </script>
 </body>
 
 </html>
