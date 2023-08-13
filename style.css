@@ -377,7 +377,7 @@ header img{width: 100%;
  }
 }
 
-.footer{margin-top: 16px;}
+.footer{margin-top: 16px;margin-bottom: 30px;}
 .footer a{margin-right: 10px;}
 
 @media (max-width: 599px) {
