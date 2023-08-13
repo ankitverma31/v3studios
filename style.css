@@ -9,12 +9,9 @@ a{
     text-decoration: underline;
     color: #e6bf24;
 }
-html {
-  height: -webkit-fill-available;
-}
+
 body{
   min-height: 100vh;
-  min-height: -webkit-fill-available;
   width: 100%;
   background: #202124;
   color: #d1d1d1;
