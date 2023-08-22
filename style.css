@@ -67,7 +67,8 @@ header li {
   }
 } */
 .offcanvas-menu > label {
-  top: 70px;
+  /* top: 70px; */
+  top: 18px;
   right: 14px;
   position: fixed;
   width: 40px;
@@ -386,7 +387,7 @@ header img{width: 100%;
     width: 100%;
     margin-bottom: 40px;
     position: fixed;
-    top: 52px;
+    /* top: 52px; */
     border-bottom: 1px solid #393939;
     z-index: 1;
   }
@@ -395,7 +396,8 @@ header img{width: 100%;
     position: fixed;
     max-width: 80px;
     height: auto;
-    top: 66px;
+    /* top: 66px; */
+    top: 14px;
     margin: 0;
   }
   .notification-top-bar{height: 52px;line-height: 1.4;}
